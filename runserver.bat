@@ -1,0 +1,1 @@
+java -classpath "sql.jar;" intranet.source.server.Server

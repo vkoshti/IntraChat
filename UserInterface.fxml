@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.Cursor?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" prefWidth="800" prefHeight="600" maxWidth="Infinity" maxHeight="Infinity" >
+	<top>
+		<VBox maxWidth="Infinity" style="-fx-background-color:#212121">
+			<children>
+				<HBox prefWidth="300" prefHeight="40" style="-fx-background-color:#212121" maxWidth="Infinity">
+					<children>
+						<ComboBox promptText="Select User" prefWidth="259" fx:id="selectuser" prefHeight="40"/>
+						<Button text="+" fx:id="addUser" prefWidth="36" prefHeight="40" onAction="#addusers">
+							<tooltip>
+								<Tooltip text="Add User"/>
+							</tooltip>
+						</Button>
+						<Label text="Status:" style="-fx-font-family:consolas;-fx-text-fill:white;-fx-font-size:15pt;-fx-spacing:10" />
+						<Label text="Online" style="-fx-font-family:consolas;-fx-text-fill:white;-fx-font-size:15pt;" />
+					</children>
+				</HBox>
+				<Label text="Users" style="-fx-font-family:consolas;-fx-text-fill:white;-fx-font-size:20pt;-fx-border-color:white;-fx-border-width:1 1 1 0;-fx-padding:10 10 10 10;-fx-alignment:top_left;-fx-spacing:0 0 20 0;-fx-background-color:#212121" prefWidth="310" maxWidth="300"/>
+
+			</children>
+		</VBox>
+	</top>
+	<center>
+		<VBox prefWidth="300" style="-fx-background-color:#212121;-fx-border-width:0 1 0 0;-fx-border-color:white" alignment="top_left" fx:id="tabview" maxWidth="Infinity"> 
+			<TabPane fx:id="tabPane" VBox.vgrow="always" prefHeight="600" prefWidth="300" tabClosingPolicy="unavailable" rotateGraphic="true">
+			</TabPane>
+		</VBox>
+	</center>
+
+
+	<bottom>
+		<HBox alignment="center_right">
+			<children>
+				<TextField  promptText="Start Your conversation here!" prefWidth="600" prefHeight="30" fx:id="msgarea"/>
+
+				<Button text="send-" prefWidth="200" prefHeight="30" fx:id="send" onAction="#sendMessage" defaultButton="true"/>
+			</children>
+		</HBox>
+	</bottom>
+
+</BorderPane>

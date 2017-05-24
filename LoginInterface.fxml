@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<GridPane  xmlns:fx="http://javafx.com/fxml" prefWidth="500" prefHeight="300" hgap="20" vgap="20" alignment="center" fx:controller="intranet.source.client.controller.LoginController">
+	<Label text="Your Name: " GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+	<TextField fx:id="yname" promptText="Your Name" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+	<Button text="submit" prefHeight="30" prefWidth="200" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="submitbutton" onAction="#joinChat" defaultButton="true"/>
+
+	<Label text="" fx:id="status" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="3" />
+</GridPane>
