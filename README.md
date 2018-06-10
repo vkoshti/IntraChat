@@ -1,5 +1,5 @@
 # IntraChat
-This application allows you to chat in LAN users.
+## This application allows you to chat in LAN users.
 Broadcast Your messages to all users.
 ![alt text](https://github.com/vkoshti/IntraChat/blob/master/Screenshots/Capture.JPG)
 ![alt text](https://github.com/vkoshti/IntraChat/blob/master/Screenshots/fbroadcast.JPG)
